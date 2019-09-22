@@ -77,11 +77,12 @@ $(function () {
 	});
 
 
-	// Блоки в Грид стиле плагин - Мasonry
+	// Блоки в Грид стиле плагин - Izotope
 	$('.grid').isotope({
 		layoutMode: 'packery',
 		itemSelector: '.grid-item'
 	});
+
 
 
 	// Скрипт карусели
