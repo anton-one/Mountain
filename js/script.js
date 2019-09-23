@@ -1,6 +1,8 @@
 $(function () {
 
 
+
+
 	var burger = $("#nav-toggle"),
 		introH = $("#services").innerHeight(),
 		scrollOffset = $(window).scrollTop();
