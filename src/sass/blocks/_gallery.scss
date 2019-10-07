@@ -1,0 +1,19 @@
+.gallery {
+	background-color: #f6f6f6;
+
+	.grid-item {
+		width: 33.33%;
+		overflow: hidden;
+
+		img {
+			vertical-align: middle;
+			width: 100%;
+			transition: opacity 1s, transform 1s;
+
+			&:hover {
+				transform: scale3d(1.1, 1.1, 1);
+				cursor: pointer;
+			}
+		}
+	}
+}
