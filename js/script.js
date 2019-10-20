@@ -83,6 +83,8 @@ $(function () {
 	$('.grid').isotope({
 		layoutMode: 'packery',
 		itemSelector: '.grid-item'
+	}).imagesLoaded(function () {
+		$('.grid').isotope('reload');
 	});
 
 
