@@ -102,6 +102,7 @@ $(function () {
 
 
 	// Блоки в Грид стиле плагин - Izotope
+	// init Isotope
 	var $grid = $('.grid').isotope({
 		layoutMode: 'packery',
 		itemSelector: '.grid-item'
@@ -110,7 +111,14 @@ $(function () {
 	$grid.imagesLoaded().progress(function () {
 		$grid.isotope('layout');
 	});
-	//
+
+	//imagesLoaded
+	var $grid = $('.grid').imagesLoaded(function () {
+		$grid.isotope({
+			layoutMode: 'packery',
+			itemSelector: '.grid-item'
+		});
+	});
 
 
 });
