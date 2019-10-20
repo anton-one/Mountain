@@ -78,7 +78,6 @@ $(function () {
 		thumbnail: false,
 	});
 
-
 	// Скрипт карусели
 	$('.reviews__caro').slick({
 		speed: 1500,
@@ -100,7 +99,8 @@ $(function () {
 	$('.modal__close').on('click', function () {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
-	
+
+
 	// Блоки в Грид стиле плагин - Izotope
 	var $grid = $('.grid').isotope({
 		layoutMode: 'packery',
@@ -112,5 +112,5 @@ $(function () {
 	});
 	//
 
-});
 
+});
