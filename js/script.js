@@ -85,6 +85,9 @@ $(function () {
 		itemSelector: '.grid-item'
 	});
 
+	$(window).resize(function () {
+		$('.grid').isotope().isotope('reloadItems');
+	});
 
 
 	// Скрипт карусели
@@ -111,6 +114,3 @@ $(function () {
 
 });
 
-$(window).resize(function () {
-	$('.grid').isotope().isotope('reloadItems');
-});
