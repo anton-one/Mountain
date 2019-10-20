@@ -83,8 +83,6 @@ $(function () {
 	$('.grid').isotope({
 		layoutMode: 'packery',
 		itemSelector: '.grid-item'
-	}).imagesLoaded(function () {
-		$('.grid').isotope('reload');
 	});
 
 
@@ -111,5 +109,8 @@ $(function () {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
 
+});
 
+$(window).resize(function () {
+	$('.grid').isotope().isotope('reloadItems');
 });
