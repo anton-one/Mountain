@@ -80,14 +80,15 @@ $(function () {
 
 
 	// Блоки в Грид стиле плагин - Izotope
-	$('.grid').isotope({
+	var $grid = $('.grid').isotope({
 		layoutMode: 'packery',
 		itemSelector: '.grid-item'
 	});
-
-	$(window).resize(function () {
-		$('.grid').isotope().isotope('reloadItems');
+	// layout Isotope after each image loads
+	$grid.imagesLoaded().progress(function () {
+		$grid.isotope('layout');
 	});
+	//
 
 
 	// Скрипт карусели
