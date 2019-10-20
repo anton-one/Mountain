@@ -79,18 +79,6 @@ $(function () {
 	});
 
 
-	// Блоки в Грид стиле плагин - Izotope
-	var $grid = $('.grid').isotope({
-		layoutMode: 'packery',
-		itemSelector: '.grid-item'
-	});
-	// layout Isotope after each image loads
-	$grid.imagesLoaded().progress(function () {
-		$grid.isotope('layout');
-	});
-	//
-
-
 	// Скрипт карусели
 	$('.reviews__caro').slick({
 		speed: 1500,
@@ -112,6 +100,17 @@ $(function () {
 	$('.modal__close').on('click', function () {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	});
+	
+	// Блоки в Грид стиле плагин - Izotope
+	var $grid = $('.grid').isotope({
+		layoutMode: 'packery',
+		itemSelector: '.grid-item'
+	});
+	// layout Isotope after each image loads
+	$grid.imagesLoaded().progress(function () {
+		$grid.isotope('layout');
+	});
+	//
 
 });
 
